@@ -4,24 +4,21 @@ declare(strict_types=1);
 
 namespace App\Entity\Product;
 
-use Doctrine\ORM\Mapping as ORM;
 use Sylius\Component\Core\Model\Product as BaseProduct;
 
 class Product extends BaseProduct implements ProductInterface
 {
 
-    /**
-     * @var string
-     */
-    protected string $color;
+    /*** @var ?string */
+    protected ?string $color;
 
 
-    public function getColor(): string
+    public function getColor(): ?string
     {
         return $this->color;
     }
 
-    public function setColor($color): void
+    public function setColor(?string $color): void
     {
         $this->color = $color;
     }

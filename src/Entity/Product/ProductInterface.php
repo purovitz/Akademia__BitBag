@@ -10,8 +10,8 @@ interface ProductInterface
     const PRODUCT_COLOR_BLUE = "Blue";
     const PRODUCT_COLOR_GREEN = "Green";
 
-    public function getColor(): string;
+    public function getColor(): ?string;
 
-    public function setColor($color): void;
+    public function setColor(?string $color): void;
 
 }
