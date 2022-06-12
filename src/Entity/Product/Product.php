@@ -12,7 +12,6 @@ class Product extends BaseProduct implements ProductInterface
     /*** @var ?string */
     protected ?string $color;
 
-
     public function getColor(): ?string
     {
         return $this->color;

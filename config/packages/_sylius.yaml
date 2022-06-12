@@ -16,6 +16,7 @@ sylius_product:
         product:
             classes:
                 model: App\Entity\Product\Product
+                form: App\Form\Type\ProductTypeExtension
 
 
 sylius_shop:
